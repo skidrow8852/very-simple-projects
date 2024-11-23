@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <title>Simple Snake game</title>
+        <style>
+            #div {
+                width: 100px;
+                height: 100px;
+                background-color: aqua;
+                margin: 20px;
+            }
+
+            #canvas {
+                background-image: url('assets/bg.jpg');
+            }
+            #div {
+                display: none;
+                position: absolute;
+                width: 400px;
+                height: 400px;
+                transform: translateX(40%) translateY(40%);
+                border : 2px solid blue;
+                border-radius: 5px;
+                
+            }
+            #div h1 {
+                display: flex;
+                justify-content:center;
+                align-items: center;
+            }
+            #div h3 {
+                display: flex;
+                justify-content:center;
+                align-items: center;
+                color: magenta;
+            }
+            #div button {
+                display: flex;
+                justify-content:center;
+                align-items: center;
+                color: black;
+                padding: 10px;
+                border-radius: 10px;
+                font-weight: bold;
+                background-color: yellow;
+                cursor: pointer;
+                
+            }
+
+        </style>
+
+       
+    </head>
+
+        <body>
+             <div id="div">
+                <h1>GAME OVER</h1>
+                <h3 id="score">Score : </h3>
+                <div style="display: flex; justify-content: center;align-items: center;align-content: center;">
+                <button onclick="tryAgain()">Try Again</button>
+                </div>
+
+            </div>
+            <canvas id="canvas" width="800px" height="800px"></canvas>
+            <script src="logic.js"></script>
+           
+            
+        </body>
+
+</html>
